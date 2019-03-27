@@ -5,7 +5,7 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -37,9 +37,42 @@
 <div class="col-sm-8">
 	<div class="well well-lg">
 		<h2>Projecten</h2>
-		<article>
-
-		</article>
+		<div>
+			<article class="clearfix">
+				<img src="img/bot_icon2.png" alt="Afbeelding van Marcus Tullius Cicero met de caption `Cicero Bot` onder" class="pull-left">
+				<h4>Cicero Bot</h4>
+				<p>
+					Een discord bot die gebruik maakt van de discord.py API om asynchrone requests af te handelen.
+					De applicatie word gebruikt in een <a href="https://discord.gg/pjCAkds">discord server</a> van 100 gebruikers waarvan ~30 de applicatie dagelijks geruiken.
+					<br>
+					<br>
+					Aan de hand van een .txt database heeft de bot enkele functionaliteiten zoals
+					een Issue Tracking System (ITS),
+					een anoniem stemsysteem dat via emojis werkt en een piechart kan tonen op basis van stemresultaten alsook immuun te zijn tegen VPN,
+					omzetten van eenheden en tijdzones,
+					en wekelijkse notificaties.
+					<br>
+					<br>
+					Deze bot word lokaal op mijn Raspberry pi gehost en gebruikt jenkins' continuous deployment met github; Elke 6 uur word github code opgehaald en word de bot opnieuw opgestart.
+					<br>
+					Deze applicatie zal nooit definitief afzijn en ik werk er weekelijks aan verder. <br>
+					In de toekomst heb ik plannen om van mijn .txt database af te stappen en een SQL database te gebruiken via MariaDB.
+					<br>
+					<a href="https://www.github.com/KarelPeeters123/Discordbots"><i class="fa fa-github" style="font-size:48px;color: black"></i></a>
+				</p>
+			</article>
+			<article class="clearfix">
+				<img src="img/REST.png" alt="Afbeelding van een POST request via de Postman applicatie" class="pull-left" style="width: 400px">
+				<h4>REST API voor umami met Spring Boot</h4>
+				<p>
+					Voor het vak Internet Programmeren, maakte ik een REST API voor umami.
+					Het laat toe om Gerechten, Dagmenus en Weekmenus aan te tonen, toe te voegen en aan te passen via http requests.
+					De applicatie is publiek beschikbaar op <u>http://193.191.177.8:10987/</u>
+					<br>
+					De github repository is jammer genoeg private.
+				</p>
+			</article>
+		</div>
 	</div>
 </div>
 <div class="col-sm-2"></div>
