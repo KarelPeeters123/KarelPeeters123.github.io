@@ -1,3 +1,7 @@
 td.first-column {
 	font-weight: bold;
 }
+
+td.selected {
+	font-weight: bolder;
+}
