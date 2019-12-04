@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: karelpeeters123.github.io
+Token: 197c0af4a2526e1323806ae590d755618a74a9b5f5b95c9a6ec92654f8362047
