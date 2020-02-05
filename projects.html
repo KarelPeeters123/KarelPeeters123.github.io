@@ -11,7 +11,7 @@
 
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<meta charset="UTF-8">
-	<title>Projecten</title>
+	<title>Projects</title>
 </head>
 <header>
 	<nav class="navbar navbar-default"></nav>
@@ -21,9 +21,9 @@
 				<a class="navbar-brand" href="#">Karel Peeters</a>
 			</div>
 			<ul class="nav navbar-nav">
-				<li><a href="index.html">Over Mezelf</a></li>
-				<li class="active"><a href="projecten.html">Projecten</a></li>
-				<li><a href="competenties.html">Competenties</a></li>
+				<li class="active"><a href="index.html">About Me</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="competences.html">Competences</a></li>
 				<li><a href="cv.html">CV</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
@@ -41,43 +41,44 @@
 			<img src="img/bot_icon2.png" alt="Afbeelding van Marcus Tullius Cicero met de caption `Cicero Bot` onder" class="pull-left">
 			<h4>Cicero Bot</h4>
 			<p>
-				Een discord bot die gebruik maakt van de discord.py API om asynchrone requests af te handelen.
-				De applicatie word gebruikt in een <a href="https://discord.gg/pjCAkds">discord server</a> van 100 gebruikers waarvan ~30 de applicatie dagelijks geruiken.
+				A discord bot that makes use of the discord.py API to handle assynchronous requests.
+				The application is used in a <a href="https://discord.gg/pjCAkds">discord server</a> of roughly 100 users with roughly 30 using it on a daily basis.
 				<br>
 				<br>
 				Aan de hand van een .txt database heeft de bot enkele functionaliteiten zoals
-				een Issue Tracking System (ITS),
-				een anoniem stemsysteem dat via emojis werkt en een piechart kan tonen op basis van stemresultaten alsook immuun te zijn tegen VPN,
-				omzetten van eenheden en tijdzones,
-				en wekelijkse notificaties.
+				Through the use of a .txt database the bot has a few functionalities:
+				Issue Tracking System (ITS),
+				an anonymous voting system that works through emojis and makes use of pie charts to show results. It has gone through many iterations as issues came along such as the use of a VPN to cast multiple votes
+				converting of units and timezones,
+				weekly notifications
 				<br>
 				<br>
-				Deze bot word lokaal op mijn Raspberry pi gehost en gebruikt jenkins' continuous deployment met github; Elke 6 uur word github code opgehaald en word de bot opnieuw opgestart.
+				The bot is hosted locally on a Raspberry pi and utilises jenkins for continuous deployment with Github; Every update to the bot is immediately deployed.
 				<br>
-				Deze applicatie zal nooit definitief afzijn en ik werk er weekelijks aan verder. <br>
-				In de toekomst heb ik plannen om van mijn .txt database af te stappen en een SQL database te gebruiken via MariaDB.
+				This application will never be completely finished and I still work on it regularly<br>
+				I have future plans to update the database to a SQL database to avoid struggles that come along with .txt files
 				<br>
 				<a href="https://www.github.com/KarelPeeters123/Discordbots"><i class="fa fa-github" style="font-size:48px;color: black"></i></a>
 			</p>
 		</article>
 		<article class="clearfix well well-lg">
-			<img src="img/REST.png" alt="Afbeelding van een POST request via de Postman applicatie" class="pull-left" style="width: 400px">
-			<h4>REST API voor umami met Spring Boot</h4>
+			<img src="img/REST.png" class="pull-left" style="width: 400px">
+			<h4>REST API with Spring Boot</h4>
 			<p>
-				Voor het vak Internet Programmeren, maakte ik een REST API voor umami.
+				For my course Internet Programming, I made a REST API for umami.
 				Het laat toe om Gerechten, Dagmenus en Weekmenus aan te tonen, toe te voegen en aan te passen via http requests.
-				De applicatie is publiek beschikbaar op <u>http://193.191.177.8:10987/</u>
+				It allows adding, updating, showing and deleting of meals, daily menus and weekly menus through http
 				<br>
-				De github repository is jammer genoeg private.
+				Unfortunately the git repository had to be kept private
 			</p>
 		</article>
 		<article class="clearfix well well-lg">
-			<img src="img/Romanise.png" alt="Screenshot van de upvote counter op reddit.com/r/RoughRomanMemes waar romeinse cijfers te zien zijn in plaats van arabische nummers" class="pull-left">
+			<img src="img/Romanise.png" class="pull-left">
 			<h4>Romanise firefox add-on</h4>
 			<p>
-				Om beter te begrijpen hoe add-ons of browser-extensies werken, maakte ik een add-on voor firefox in javascript.
-				Deze extensie verandert op de website <a href="https:/www.reddit.com/r/RoughRomanMemes">reddit.com/r/RoughRomanMemes</a> de getallen in de upvote counter van arabische nummers naar romeinse cijfers
-				Jammer genoeg kreeg ik de add-on niet goedgekeurt om op de firefox web store te plaatsen (add-ons die tekst aanpassen keurt Mozilla default af), maar de code is publiek beschikbaar op github
+				To get a better grasp on the inner workings of browser extension, I made a very simple firefox add-on in javascript
+				This extension changes the numbers on the website <a href="https:/www.reddit.com/r/RoughRomanMemes">reddit.com/r/RoughRomanMemes</a> into roman numerals
+				Unfortunately, the add-on could not get approved by mozilla, but the code is publicly accesible on github.
 				<br>
 				<a href="https://www.github.com/KarelPeeters123/Romanise"><i class="fa fa-github" style="font-size:48px;color: black"></i></a>
 			</p>
