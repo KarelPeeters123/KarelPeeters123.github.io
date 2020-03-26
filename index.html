@@ -1,60 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="style.css" type="text/css">
 	<meta charset="UTF-8">
-	<title>About Me</title>
+	<title>Karel Peeters</title>
 </head>
 <header>
-	<nav class="navbar navbar-default"></nav>
+	<!-- <nav class="navbar navbar-default"></nav>
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Karel Peeters</a>
+				<a class="navbar-brand" href="#about">Karel Peeters</a>
 			</div>
 			<ul class="nav navbar-nav">
+				<li><a>About</a></li>
 				<li><a href="projects.html">Projects</a></li>
 				<li><a href="competences.html">Competences</a></li>
-				<li><a href="cv.html">CV</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a id="cv-click" href="#cv">CV</a></li>
+				<li><a id="contact-click" href="#contact">Contact</a></li>
 			</ul>
 		</div>
-	</nav>
+	</nav> -->
 </header>
-<body>
-<div class="col-sm-2"></div>
-<div class="col-sm-8">
-	<h1>About Me</h1>
-	<article class="well well-lg">
-		<img src="img/Karel_pfp2.jpg" alt="Foto van Karel Peeters" class="pull-right" width="250px">
-		<h3>Personal Info</h3>
-		<ul>
-			<li>Name: Karel Peeters</li>
-			<li>Date of Birth: 13/05/1997</li>
-		</ul>
-		<h3>Hobbies</h3>
-		<ul>
-			<li>hacking around on Urbit</li>
-			<li>Walks in nature</li>
-			<li>Sailing</li>
-		</ul>
-		<br>
-	</article>
-</div>
-<div class="col-sm-2"></div>
+<body class="container">
 
+	<div class="row">
+
+		<div class="col">
+
+		</div>
+		<div class="d-flex flex-column" style="border-radius: 5px; width: 170px; position: fixed; margin-top: 100px; background-color: #563789;">
+			<ul style="list-style-tupe: none;">
+				<li><a href="#about">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="competences.html">Competences</a></li>
+				<li><a id="cv-click" href="#cv">CV</a></li>
+				<li><a id="contact-click" href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		<div class="col-8">
+			<div id="about">
+				<div>
+					<h1 id="about">About Me</h1>
+					<article class="well well-lg">
+						<img src="img/Karel_pfp2.jpg" alt="Foto van Karel Peeters" class="pull-right" width="250px">
+						<h3>Personal Info</h3>
+						<ul>
+							<li>Name: Karel Peeters</li>
+							<li>Date of Birth: 13/05/1997</li>
+						</ul>
+						<h3>Hobbies</h3>
+						<ul>
+							<li>hacking around on Urbit</li>
+							<li>Walks in nature</li>
+							<li>Sailing</li>
+						</ul>
+						<br><br><br>
+					</article>
+				</div>
+			</div>
+			<div id="cv">
+				<div>
+					<h2>Curicula Vitae</h2>
+					<article class="well well-lg">
+						<table class="table">
+							<tr>
+								<td>nederlands</td>
+								<td><a href="cv/Resume_NL.pdf"><i class="fa fa-file-pdf-o" style="font-size:48px;color:red"></i></a></td>
+							</tr>
+							<tr>
+								<td>english</td>
+								<td><a href="cv/Resume_EN.pdf"><i class="fa fa-file-pdf-o" style="font-size:48px;color:red"></i></a></td>
+							</tr>
+							<tr>
+								<td>français</td>
+								<td><a href="cv/Resume_FR.pdf"><i class="fa fa-file-pdf-o" style="font-size:48px;color:red"></i></a></td>
+							</tr>
+						</table>
+					</article>
+				</div>
+			</div>
+			<div id="contact">
+				<div>
+					<h2>Contact</h2>
+					<article class="well well-lg">
+						<table class="table">
+							<tr>
+								<td>Name</td>
+								<td>Karel Peeters</td>
+							</tr>
+							<tr>
+								<td>Telef. nr.</td>
+								<td>+352621735505</td>
+							</tr>
+							<tr>
+								<td>Github</td>
+								<td><a href="https://www.github.com/KarelPeeters123"><i class="fa fa-github" style="font-size:48px;color: black"></i><br>KarelPeeters123</a></td>
+							</tr>
+							<tr>
+								<td>LinkedIn</td>
+								<td>
+									<a href="https://www.linkedin.com/in/karel-peeters-3b27b0153/">
+										<i class="fa fa-linkedin-square" style="font-size:48px;"></i>
+										<br>karel-peeters-3b27b0153
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>E-Mail</td>
+								<td><a href="mailto:karel.peeters@ciminko.lu"><i class="fa fa-envelope" style="font-size:48px;color: black;"></i><br>karel.peeters@ciminko.lu</a></td>
+							</tr>
+							<tr>
+								<td>Twitter</td>
+								<td><a href="https://twitter.com/borlytsalnus"><i class="fa fa-twitter" style="font-size:48px;"></i><br>@borlytsalnus</a></td>
+							</tr>
+						</table>
+					</article>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+
+		</div>
+	</div>
 
 </body>
 </html>
+<script type="text/javascript">
+	var currentScroll = 0;
+	$('#cv-click').click(function() {
+		$.scrollTo($('#cv'), {duration: 1000});
+	});
+	// $('#about').scroll(function() {
+	//
+	// 	$.scrollTo($('#cv'), {duration: 1000});
+	// });
+	$('#contact-click').click(function() {
+		$.scrollTo($('#contact'), {duration: 1000});
+	});
+</script>

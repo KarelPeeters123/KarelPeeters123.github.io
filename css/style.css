@@ -5,3 +5,7 @@ td.first-column {
 td.selected {
 	font-weight: bolder;
 }
+li {
+	padding: 5px;
+	list-style-type: none;
+}
