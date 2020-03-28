@@ -5,7 +5,32 @@ td.first-column {
 td.selected {
 	font-weight: bolder;
 }
+
+#sidebar {
+	padding: 0px;
+	margin: 0px;
+}
 li {
 	padding: 5px;
 	list-style-type: none;
+}
+li a {
+	color: #000000;
+	/* border-bottom: 2px solid #ff751a; */
+	padding-bottom: 3px;
+}
+ul {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.selected {
+	border-bottom: 3px solid coral;
+}
+a:hover {
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 3px solid coral;
+}
+body {
+	background-image: linear-gradient(darkcyan, lightseagreen);
 }
