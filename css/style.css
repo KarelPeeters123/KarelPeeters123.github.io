@@ -26,10 +26,22 @@ ul {
 .selected {
 	border-bottom: 3px solid coral;
 }
-a:hover {
+nav ul li a:hover {
 	color: #000000;
 	text-decoration: none;
 	border-bottom: 3px solid coral;
+}
+a {
+	color:black;
+}
+td a:hover {
+	text-decoration: none;
+}
+td a i {
+	color: black;
+}
+td a i:hover {
+	color: ;
 }
 body {
 	background-image: linear-gradient(darkcyan, lightseagreen);
