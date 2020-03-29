@@ -24,7 +24,7 @@ ul {
 	padding-left: 0px;
 }
 .selected {
-	border-bottom: 3px solid coral;
+	border-bottom: 3px solid lightcoral;
 }
 nav ul li a:hover {
 	color: #000000;
@@ -43,6 +43,10 @@ td a i {
 td a i:hover {
 	color: ;
 }
+article {
+	margin-top: 30px;
+}
 body {
-	background-image: linear-gradient(darkcyan, lightseagreen);
+	background-image: linear-gradient(seagreen, lightseagreen);
+	/* background-color: seagreen; */
 }
