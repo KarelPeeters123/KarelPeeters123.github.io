@@ -37,14 +37,15 @@ a {
 td a:hover {
 	text-decoration: none;
 }
+table tr{
+   height: 125px;
+}
 td a i {
 	color: black;
 }
-td a i:hover {
-	color: ;
-}
 article {
-	margin-top: 30px;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 body {
 	background-image: linear-gradient(seagreen, lightseagreen);
