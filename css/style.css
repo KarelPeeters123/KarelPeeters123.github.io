@@ -48,7 +48,37 @@ article {
 	margin-bottom: 60px;
 }
 body {
-	background-image: linear-gradient(seagreen, lightseagreen);
-	/* background-color: seagreen; */
+	background-image: linear-gradient(#ff7400, #ffce00);
 }
 
+
+/* Fonts and Font Color/Highlight */
+
+p {
+	color: #5e2c04;
+}
+
+.name-heading {
+	font-size: 100px;
+	font-family: "Nabla", system-ui;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+	  "EDPT" 100,
+	  "EHLT" 12;
+}
+  
+.main-page-titles {
+	font-family: "Abel", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color:#ff7400;
+	background-image: linear-gradient(#ffce49, #ffce00);
+	border-radius: 2vh;
+	padding: 2vh;
+	text-shadow: #000000;
+  }
+  .main-page-section {
+	padding: 2%;
+  }
