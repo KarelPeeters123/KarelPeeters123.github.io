@@ -1,3 +1,9 @@
+:root {
+	--orange: #fc7c04;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+}
+
 td.first-column {
 	font-weight: bold;
 }
@@ -15,7 +21,7 @@ li {
 	list-style-type: none;
 }
 li a {
-	color: #000000;
+	color: #fffabf;
 	/* border-bottom: 2px solid #ff751a; */
 	padding-bottom: 3px;
 }
@@ -24,12 +30,12 @@ ul {
 	padding-left: 0px;
 }
 .selected {
-	border-bottom: 3px solid lightcoral;
+	border-bottom: 3px solid var(--orange);
 }
 nav ul li a:hover {
-	color: #000000;
+	color: #fc7c04;
 	text-decoration: none;
-	border-bottom: 3px solid coral;
+	border-bottom: 3px solid #fc7c04;
 }
 a {
 	color:black;
@@ -37,15 +43,12 @@ a {
 td a:hover {
 	text-decoration: none;
 }
-table tr{
-   height: 125px;
-}
 td a i {
 	color: black;
 }
 article {
-	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 body {
 	background-image: linear-gradient(#ff7400, #ffce00);
@@ -59,7 +62,7 @@ p {
 }
 
 .name-heading {
-	font-size: 100px;
+	font-size: 10vh;
 	font-family: "Nabla", system-ui;
 	font-optical-sizing: auto;
 	font-weight: 400;
@@ -67,18 +70,20 @@ p {
 	font-variation-settings:
 	  "EDPT" 100,
 	  "EHLT" 12;
+	  background-color: #65350F;
+	  border-radius: 2vh;
+	  padding: 2vh;
 }
   
 .main-page-titles {
-	font-family: "Abel", sans-serif;
+	font-family: "Nabla", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	color:#ff7400;
-	background-image: linear-gradient(#ffce49, #ffce00);
+	background-color: #65350F;
 	border-radius: 2vh;
 	padding: 2vh;
-	text-shadow: #000000;
   }
+
   .main-page-section {
 	padding: 2%;
   }
