@@ -22,6 +22,7 @@
 
 	<!-- ThreeJS -->
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r108/three.js"></script>
+	<script src = "js/content.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 	<meta charset="UTF-8">
@@ -39,14 +40,14 @@
 
 		</div>
 		<script>
-			var scene = new THREE.Scene();
-			document.addEventListener('mousemove', onMouseMove, false);
-			var camera = new THREE.Perspective(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-			var mouseX;
-			var mouseY;
-			var renderer = new THREE.WebGLRenderer();
-			renderer.setSize (window.innerWidth, window.innerHeight);
-			document.body.appendChild(renderer.domElement);
+			// var scene = new THREE.Scene();
+			// document.addEventListener('mousemove', onMouseMove, false);
+			// var camera = new THREE.Perspective(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+			// var mouseX;
+			// var mouseY;
+			// var renderer = new THREE.WebGLRenderer();
+			// renderer.setSize (window.innerWidth, window.innerHeight);
+			// document.body.appendChild(renderer.domElement);
 			// 3:13/12:35 - https://www.youtube.com/watch?v=K3WCGUO1uu8
 		</script>
 		<nav class="d-flex flex-column" style="margin-left: 40px; border-radius: 5px; width: 120px; position: fixed; margin-top: 60px; background-color: #65350F; margin-bottom: 0px; text-align: center;">
@@ -104,11 +105,11 @@
 						</div>
 					</article>
 					<article class="row">
-						<div id = "experience" class="main-page-section">
+						<div id="experience" class="main-page-section">
 							<h2 class="main-page-titles"></i> Experience</h2>
 						</div>
-						<div class="col" style="padding-top: 5px;">
-							<p>
+						<div class="col" id="experience-paragraphs"style="padding-top: 5px;">
+							<!-- <p>
 								<b>Intermediate Software Engineer at Born Digital, Auckland </b><br>
 								FEB 2023 - PRESENT <br>
 								<i>Projects:</i>
@@ -149,7 +150,7 @@
 									Responsibilities included creating a responsive and qualitative frontend of web portals, training backend developers in front end frameworks and regression testing. 
 									Technologies used include <b>GOLang</b> for the backend API, <b>VueJS</b> for web design.
 								</i>
-							</p>
+							</p> -->
 						</div>
 					</article>
 					<article class="row">
@@ -202,7 +203,7 @@
 				</div>
 			</div>
 			<div id="contact">
-				<div>
+				<div class="container">
 					<article>
 						<h2 class="main-page-titles">Contact</h2>
 						<table style="margin-top: 10px;" class="table table-borderless">
