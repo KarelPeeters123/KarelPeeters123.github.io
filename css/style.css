@@ -1,7 +1,7 @@
 :root {
-	--orange: #fc7c04;
-	--indigo: #6610f2;
-	--purple: #6f42c1;
+	--karelorange: #fc7c04;
+	--karelyellow: #ffce00;
+	--karelbrown: #65350F;
 }
 
 td.first-column {
@@ -17,12 +17,12 @@ td.selected {
 	margin: 0px;
 }
 li {
-	padding: 5px;
+	/* padding: 5px; */
 	list-style-type: none;
 }
 li a {
 	color: #fffabf;
-	/* border-bottom: 2px solid #ff751a; */
+	border-bottom: 2px solid #ff751a;
 	padding-bottom: 3px;
 }
 ul {

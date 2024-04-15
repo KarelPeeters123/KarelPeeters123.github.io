@@ -96,7 +96,7 @@ var content = {
                     ]
                 }
             ],
-            takeaways: "test"
+            takeaways: ""
         },
         {
             key: "soludtiondynamics",
@@ -225,7 +225,7 @@ const showHome = () => {
         console.log(experience)
         var $para = $('<p></p>');
         $para.append(`<b>${experience.name}</b><br>`);
-        $para.append(`${experience.dates}<br>`);
+        $para.append(`${experience.dates}<br><br>`);
         $para.append(`<i>PROJECTS</i>`);
         var $list = $('<ul></ul>');
         experience.projects.forEach((project) => {
