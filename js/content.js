@@ -149,6 +149,74 @@ var content = {
                 }
             ],
             takeaways: ""
+        },
+        {
+            key: "internships",
+            company: "Internships",
+            name: "Internships",
+            dates: "",
+            projects: [
+                {
+                    name: "IOT Internship at Euricom, Belgium",
+                    key: "euricom",
+                    details: "In this internship I was tasked with developping the software and hardware to turn a mundane minifridge into a smart-fridge. The approach as to use a Raspberry PI computer attached to a camera to record the contents of the fridge. The camera was to take snapshots of the content whenever the contents changed, and send this to an AI that would count the amount of drinks of each type still int he fridge and send this to a web app where end users could consult the amounts of every drink and automatically trigger new orders of drinks that were running low.",
+                    responsibility: "I was the sole developer on this task, so with lots of help from my boss, Tech Lead and Product Owner in discussing approaches I did the necessary linux bash scripting and server configuration, as well as setting up a serverless messaging queue using microsoft azure that would send the snapshots to a noSQL database. the webapp where I developed both the frontend and backend for the webapp",
+                    technologies: [
+                        "Bash",
+                        "Linux",
+                        "Microsoft ComputerVision AI",
+                        "Azure",
+                        ".NET Core",
+                        "React",
+                        "GraphQL"
+                    ]
+                },
+                {
+                    name: "Unit Testing Internship at Ciminko, Luxembourg",
+                    key: "ciminko",
+                    details: "This project aims to make a Rest API for Order Management in the Telecommunciations industry using the TMForum standards and guidelines.",
+                    responsibility: "My responsibilities on this project were mainly focussed on writing unit tests for the existing application that was lacking any kind of automated testing and was instead relying on manual regression and end-to-end testing.",
+                    technologies: [
+                        "Java 11",
+                        "JUnit 5"
+                    ]
+                }
+            ],
+            takeaways: ""
+        },
+        {
+            key: "freelance",
+            company: "Freelance Work",
+            name: "Freelance Work",
+            dates: "",
+            projects: [
+                {
+                    name: "IOT Internship at Euricom, Belgium",
+                    key: "euricom",
+                    details: "In this internship I was tasked with developping the softwarer and hardware to turn a mundane minifridge into a smart-fridge. The approach as to use a Raspberry PI computer attached to a camera to record the contents of the fridge. The camera was to take snapshots of the content whenever the contents changed, and send this to an AI that would count the amount of drinks of each type still int he fridge and send this to a web app where end users could consult the amounts of every drink and automatically trigger new orders of drinks that were running low.",
+                    responsibility: "I was the sole developer on this task, so with lots of help from my boss, Tech Lead and Product Owner in discussing approaches I did the necessary linux bash scripting and server configuration, as well as setting up a serverless messaging queue using microsoft azure that would send the snapshots to a noSQL database. the webapp where I developed both the frontend and backend for the webapp",
+                    technologies: [
+                        "Bash",
+                        "Linux",
+                        "Microsoft ComputerVision AI",
+                        "Azure",
+                        ".NET Core",
+                        "React",
+                        "GraphQL"
+                    ]
+                },
+                {
+                    name: "Unit Testing Internship at Ciminko, Luxembourg",
+                    key: "ciminko",
+                    details: "This project aims to make a Rest API for Order Management in the Telecommunciations industry using the TMForum standards and guidelines.",
+                    responsibility: "My responsibilities on this project were mainly focussed on writing unit tests for the existing application that was lacking any kind of automated testing and was instead relying on manual regression and end-to-end testing.",
+                    technologies: [
+                        "Java 11",
+                        "JUnit 5"
+                    ]
+                }
+            ],
+            takeaways: ""
         }
     ]
 }
