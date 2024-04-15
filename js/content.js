@@ -54,7 +54,7 @@ var content = {
                     ]
                 }
             ],
-            takeaways: "test"
+            takeaways: ""
         },
         {
             key: "cloudcheck",
@@ -118,7 +118,7 @@ var content = {
                     ]
                 }
             ],
-            takeaways: "test"
+            takeaways: ""
         },
         {
             key: "reply",
@@ -137,7 +137,7 @@ var content = {
                     ]
                 }
             ],
-            takeaways: "test"
+            takeaways: ""
         }
     ]
 }
@@ -154,8 +154,10 @@ const showHome = () => {
         })
         $para.append($list);
         
-        $para.append(`<i>TAKEAWAYS</i>`);
-        $para.append(`<i>${experience.takeaways}</i>`)
+        if((experience.takeaways.length) != 0) {
+            $para.append(`<i>TAKEAWAYS</i>`);
+            $para.append(`<i>${experience.takeaways}</i>`)
+        }
        $('#experience-paragraphs').append($para);
     })
 }
