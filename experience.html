@@ -24,6 +24,7 @@
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r108/three.js"></script>
 	<script src = "js/content.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src = "js/content.js"></script>
 
 	<meta charset="UTF-8">
 	<title>Karel Peeters</title>
@@ -37,6 +38,12 @@
 	<div class="row">
 
 		<div class="col">
+			
+			<script>
+				$(document).ready(() => {
+					showExperience();
+				})
+			</script>
 
 		</div>
 		<nav class="d-flex flex-column" style="margin-left: 40px; border-radius: 5px; width: 120px; position: fixed; margin-top: 60px; background-color: #65350F; margin-bottom: 0px; text-align: center;">
@@ -60,135 +67,14 @@
 						style ="width: 100%; border-radius: 5vh;">
 					</article>
 					<article class="text-center" style="text-align: left; min-width: 100%;">
-						<h1 class="name-heading">()</h1>
+						<h1 class="name-heading"></h1>
 					</article>
 				</div>
 			</div>
 
 			<div id="">
-				<div class="container">
-					<article class="row">
-						<div id = "about" class="main-page-section">
-							<h2 class="main-page-titles">About Me</h2>
-						</div>
-						<div class="col" style="padding-top: 5px;">
-							<p>
-								<b>Title</b>
-							</p>
-							<p>
-								hi
-							</p>
-						</div>
-					</article>
-					<article class="row">
-						<div class="main-page-section">
-							<h2 class="main-page-titles"></i>Work Philosophy</h2>
-						</div>
-						<div class="col" style="padding-top: 5px;">
-							<p>
-								<b>Title</b>
-							</p>
-							<p>
-								hi
-							</p>
-						</div>
-					</article>
-					<article class="row">
-						<div id="experience" class="main-page-section">
-							<h2 class="main-page-titles"></i> Experience</h2>
-						</div>
-						<div class="col" id="experience-paragraphs"style="padding-top: 5px;">
-							<!-- <p>
-								<b>Intermediate Software Engineer at Born Digital, Auckland </b><br>
-								FEB 2023 - PRESENT <br>
-								<i>Projects:</i>
-								<ul>
-									<li><a href="">Toyota</a></li>
-									<li>ChatGPT Research Project</li>
-									<li>Inzone Careers</li>
-									<li>Evolve Education</li>
-								</ul>
-								<i>
-									Responsibilities included managing development, release, devops and client relations –fluctuating between responsibilities of intermediate and senior developer. 
-									Primary technologies used include <b> NET Core 6.0 (C#), Umbraco 13, Angular 13, React 18 and Kubernetes. </b> 
-								</i>
-							</p>
-							<p>
-								<b>Java Software Engineer at GBG CloudCheck, Auckland</b><br>
-								FEB 2022 - FEB 2023 <br>
-								<i>
-									Experience with maintaining flagship identity verification products for use in business-to-consumer (B2C) companies in financial and government sectors. 
-									Responsibilities included full stack development, strictly adhering to NZ privacy and identity verification regulation and integrating NFC use for seamless and efficient user experiences. 
-									Technologies included <b>Java Servlets</b> using <b>Java 11</b>, with <b>Jquery</b>. 
-								</i>
-							</p>
-							<p>
-								<b>Software Engineer at Solution Dynamics Limited, Auckland </b><br>
-								MAR 2021 - FEB 2022<br>
-								<i>
-									Experience with rebuilding customer-facing web portals. 
-									Responsibilities included providing qualitative and responsive web components, strictly following designs provided by UI/UX designers and reiterating on feedback provided by end-to-end (e2e) testers. 
-									Technologies used included rewriting legacy <b>ASP.NET</b> web applications using <b>Angular 10 (Typescript)</b> and <b>.NET Core</b> according to the <b>monorepo</b> paradigm.
-								</i>
-							</p>
-							<p>
-								<b>Software Development Consultant at Reply, Luxembourg</b><br>
-								JUL 2020 - DEC 2020 <br>
-								<i>
-									Experience with creating products  business-to-business (B2B) companies in the financial sector enabling EU regulation compliance for outsourcing management. 
-									Responsibilities included creating a responsive and qualitative frontend of web portals, training backend developers in front end frameworks and regression testing. 
-									Technologies used include <b>GOLang</b> for the backend API, <b>VueJS</b> for web design.
-								</i>
-							</p> -->
-						</div>
-					</article>
-					<article class="row">
-						<div class="main-page-section">
-							<h2 class="main-page-titles">Education</h2>
-						</div>
-						<div class="col" style="padding-top: 5px;">
-							<p>
-								<b>UCLL, L​euven, Belgium - <i>Bachelor of Applied Informatics</i> </b><br>
-								SEPTEMBER 2016 - PRESENT <br>
-								Major in software development
-							</p>
-						</div>
-					</article>
-					<article class="row">
-						<div id = "certifications" class="main-page-section">
-							<h2 class="main-page-titles"></i> Certifications</h2>
-						</div>
-						<div class="col" style="padding-top: 5px;">
-							<p>
-								<img
-								src="img/AWS-CloudPractitioner.png"
-								alt="AWS Cloud practitioner certification badge"
-								class="pull-left"
-								width="100vw"
-								style="border-radius: 200px;
-								margin-left:0px;">
-								<img
-								src="img/AWS-Developer-Associate.png"
-								alt="AWS Cloud practitioner certification badge"
-								class="pull-left"
-								width="100vw"
-								style="border-radius: 200px;
-								margin-left:0px;">
-							</p>
-						</div>
-					</article>
-					<article class="row">
-						<p class="">
-							<div id= "cv" class="main-page-section">
-								<h2 class="main-page-titles"><i class='fas fa-user-tie' style='font-size:36px;'></i>CV</h2>
-							</div>
-							<div style="display: flex; align-items:center"><a style="color:#5e2c04" href="cv/KarelPeeters.pdf">
-									<h4>
-										<i class="fa fa-download"></i> KarelPeeters.pdf
-									</h4>
-								</a>
-							</div>
-					</article>
+				<div class="container" id="article-container">
+					
 				</div>
 			</div>
 			<div id="contact">
