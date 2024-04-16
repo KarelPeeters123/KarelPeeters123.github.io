@@ -96,7 +96,7 @@ var content = {
                     ]
                 }
             ],
-            takeaways: ""
+            takeaways: "test"
         },
         {
             key: "soludtiondynamics",
@@ -149,18 +149,66 @@ var content = {
                 }
             ],
             takeaways: ""
-        },
+        }
+    ],
+    freelance: [
         {
-            key: "internships",
-            company: "Internships",
-            name: "Internships",
-            dates: "",
+            key: "gruitrode",
+            company: "Gruitrode Historical Society",
+            name: "Web Design for the Gruitrode Historical Society",
+            dates: "JAN 2024 - PRESENT",
+            projects: [
+                {
+                    name: "Gruitrode Historical Society Website",
+                    key: "gruitrode",
+                    details: "The Gruitrode Historical Society in Belgium, needed a website to communicate with its members about events and activities, as well as for storage of important documents that its users could access, such as historic photography.",
+                    responsibility: "I am responsible for web development, backend development, communicating with the client, hosting of the website and database management.",
+                    technologies: [
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "AWS"
+                    ]
+                }
+            ],
+            takeaways: ""
+        }
+    ],
+    projects: [
+        {
+            key: "spacy",
+            company: "Named Entity Recognition (NER) Project",
+            name: "Named Entity Recognition (NER) Project",
+            dates: "JAN 2019 - JAN 2019",
+            projects: [
+                {
+                    name: "Natural Language Processing",
+                    key: "spacy",
+                    details: "A local law firm wanted to create an AI that could be fed legal documents such as contracts, land deeds and company registrations and return the user with primarily any entities (people, companies, organsiations, addresses, dates, etc.) involved in the legal document and secondly, discover the relationships between the entities in the document. For example, a labour contract should identify all the people involved, who is the employee and who is the employer, address of the business, etc.",
+                    responsibility: "In this project I was responsible b   ",
+                    technologies: [
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "AWS"
+                    ]
+                }
+            ],
+            takeaways: ""
+        }
+    ],
+    internships: [
+        {
+            key: "euricom",
+            company: "Euricom",
+            name: "IOT Internship at Euricom, Belgium",
+            dates: "FEB 2019 - MAY 2019",
             projects: [
                 {
                     name: "IOT Internship at Euricom, Belgium",
                     key: "euricom",
                     details: "In this internship I was tasked with developping the software and hardware to turn a mundane minifridge into a smart-fridge. The approach as to use a Raspberry PI computer attached to a camera to record the contents of the fridge. The camera was to take snapshots of the content whenever the contents changed, and send this to an AI that would count the amount of drinks of each type still int he fridge and send this to a web app where end users could consult the amounts of every drink and automatically trigger new orders of drinks that were running low.",
-                    responsibility: "I was the sole developer on this task, so with lots of help from my boss, Tech Lead and Product Owner in discussing approaches I did the necessary linux bash scripting and server configuration, as well as setting up a serverless messaging queue using microsoft azure that would send the snapshots to a noSQL database. the webapp where I developed both the frontend and backend for the webapp",
+                    responsibility: "I was the sole developer on this task, so with lots of help from my Manager, Tech Lead and Product Owner in discussing approaches I did the necessary linux bash scripting and server configuration, as well as setting up a serverless messaging queue using microsoft azure that would send the snapshots to a noSQL database. the webapp where I developed both the frontend and backend for the webapp",
                     technologies: [
                         "Bash",
                         "Linux",
@@ -170,41 +218,17 @@ var content = {
                         "React",
                         "GraphQL"
                     ]
-                },
-                {
-                    name: "Unit Testing Internship at Ciminko, Luxembourg",
-                    key: "ciminko",
-                    details: "This project aims to make a Rest API for Order Management in the Telecommunciations industry using the TMForum standards and guidelines.",
-                    responsibility: "My responsibilities on this project were mainly focussed on writing unit tests for the existing application that was lacking any kind of automated testing and was instead relying on manual regression and end-to-end testing.",
-                    technologies: [
-                        "Java 11",
-                        "JUnit 5"
-                    ]
+                    
                 }
             ],
             takeaways: ""
         },
         {
-            key: "freelance",
-            company: "Freelance Work",
-            name: "Freelance Work",
-            dates: "",
+            key: "tmforum",
+            company: "Ciminko",
+            name: "Automated Unit Tester at Ciminko, Luxembourg",
+            dates: "AUG 2019 - AUG 2019",
             projects: [
-                {
-                    name: "IOT Internship at Euricom, Belgium",
-                    key: "euricom",
-                    details: "In this internship I was tasked with developping the softwarer and hardware to turn a mundane minifridge into a smart-fridge. The approach as to use a Raspberry PI computer attached to a camera to record the contents of the fridge. The camera was to take snapshots of the content whenever the contents changed, and send this to an AI that would count the amount of drinks of each type still int he fridge and send this to a web app where end users could consult the amounts of every drink and automatically trigger new orders of drinks that were running low.",
-                    responsibility: "I was the sole developer on this task, so with lots of help from my boss, Tech Lead and Product Owner in discussing approaches I did the necessary linux bash scripting and server configuration, as well as setting up a serverless messaging queue using microsoft azure that would send the snapshots to a noSQL database. the webapp where I developed both the frontend and backend for the webapp",
-                    technologies: [
-                        "Bash",
-                        "Linux",
-                        "Microsoft ComputerVision AI",
-                        "Azure",
-                        ".NET Core",
-                        "React",
-                        "GraphQL"
-                    ]
-                },
                 {
                     name: "Unit Testing Internship at Ciminko, Luxembourg",
                     key: "ciminko",
@@ -219,13 +243,14 @@ var content = {
             takeaways: ""
         }
     ]
+
 }
 const showHome = () => {
     content.experience.forEach((experience) => {
         console.log(experience)
         var $para = $('<p></p>');
         $para.append(`<b>${experience.name}</b><br>`);
-        $para.append(`${experience.dates}<br><br>`);
+        $para.append(`${experience.dates}<br>`);
         $para.append(`<i>PROJECTS</i>`);
         var $list = $('<ul></ul>');
         experience.projects.forEach((project) => {
@@ -239,12 +264,68 @@ const showHome = () => {
         }
        $('#experience-paragraphs').append($para);
     })
+    content.freelance.forEach((freelance) => {
+        console.log(freelance)
+        var $para = $('<p></p>');
+        $para.append(`<b>${freelance.name}</b><br>`);
+        $para.append(`${freelance.dates}<br>`);
+        $para.append(`<i>PROJECTS</i>`);
+        var $list = $('<ul></ul>');
+        freelance.projects.forEach((project) => {
+            $list.append(`<li><a href="experience.html?type=freelance&experience=${freelance.key}&project=${project.key}">${project.name}</a></li>`);
+        })
+        $para.append($list);
+        
+        if((freelance.takeaways.length) != 0) {
+            $para.append(`<i>TAKEAWAYS</i>`);
+            $para.append(`<i>${experience.takeaways}</i>`)
+        }
+       $('#freelance-paragraphs').append($para);
+    })
+    content.projects.forEach((projects) => {
+        console.log(projects)
+        var $para = $('<p></p>');
+        $para.append(`<b>${projects.name}</b><br>`);
+        $para.append(`${projects.dates}<br>`);
+        $para.append(`<i>PROJECTS</i>`);
+        var $list = $('<ul></ul>');
+        projects.projects.forEach((project) => {
+            $list.append(`<li><a href="experience.html?type=projects&experience=${projects.key}&project=${project.key}">${project.name}</a></li>`);
+        })
+        $para.append($list);
+        
+        if((projects.takeaways.length) != 0) {
+            $para.append(`<i>TAKEAWAYS</i>`);
+            $para.append(`<i>${projects.takeaways}</i>`)
+        }
+       $('#projects-paragraphs').append($para);
+    })
+    content.internships.forEach((internships) => {
+        console.log(internships)
+        var $para = $('<p></p>');
+        $para.append(`<b>${internships.name}</b><br>`);
+        $para.append(`${internships.dates}<br>`);
+        $para.append(`<i>PROJECTS</i>`);
+        var $list = $('<ul></ul>');
+        internships.projects.forEach((project) => {
+            $list.append(`<li><a href="experience.html?type=internships&experience=${internships.key}&project=${project.key}">${project.name}</a></li>`);
+        })
+        $para.append($list);
+        
+        if((internships.takeaways.length) != 0) {
+            $para.append(`<i>TAKEAWAYS</i>`);
+            $para.append(`<i>${internships.takeaways}</i>`)
+        }
+       $('#internships-paragraphs').append($para);
+    })
 }
 const showExperience = () => {
     var urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('experience')) {
         var expKey = urlParams.get('experience')
-        var experience = content.experience.find(exp => exp.key == expKey);
+        var type = urlParams.get('type');
+        console.log(type);
+        var experience = content[type].find(exp => exp.key == expKey);
         console.log("experience")
         $('.name-heading').empty();
         $('.name-heading').append(experience.company);
