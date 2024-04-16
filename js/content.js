@@ -327,13 +327,13 @@ const showExperience = () => {
         console.log(type);
         var experience = content[type].find(exp => exp.key == expKey);
         console.log("experience")
-        $('.name-heading').empty();
-        $('.name-heading').append(experience.company);
+        $('.title').empty();
+        $('.title').append(experience.company);
         experience.projects.forEach((project) => {
             var $article = $('<article class="row"></article>')
-            var $articleHeader = $(`<div class="main-page-section" id="${project.key}"><h2 class="main-page-titles">${project.name.replaceAll(" ", "<br>")}</h2></div>`)
+            var $articleHeader = $(`<div class="page-subsection" id="${project.key}"><h2 class="page-titles">${project.name.replaceAll(" ", "<br>")}</h2></div>`)
             $article.append($articleHeader);
-            var $articleBody = $(`<div class="col" style="padding-top: 5px;"></div>`);
+            var $articleBody = $(`<div class="col"></div>`);
             var $details = $(`<p><b>Project Details:</b><br><i>${project.details}</i></p>`);
             $articleBody.append($details);
             var $responsibilities = $(`<p><b>My Responsibilities</b><br><i>${project.responsibility}</i></p>`);

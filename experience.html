@@ -23,7 +23,6 @@
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r108/three.js"></script>
 	<script src = "js/content.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src = "js/content.js"></script>
 
 	<meta charset="UTF-8">
 	<title>Karel Peeters</title>
@@ -33,30 +32,31 @@
 	<div class="row">
 		<!-- Left Margin -->
 		<div class="col"> </div>
-		<!-- Run function '' from content.js - ??? -->
-			<script>
-				$(document).ready(() => {
-					showExperience();
-				})
-			</script>
-		</div>
-        	<!-- Middle with Content -->
+		<!-- Run function 'showExperience' from content.js - ??? -->
+		<script>
+			$(document).ready(() => {
+				showExperience();
+			})
+		</script>
+		<!-- Middle with Content -->
 		<div class="col-10">
-			<!-- Section 1: Content -->
-			<div>
-				<div id = "section" class="container">
-					<!-- Subsection: About Me -->
-					<article id ="aboutme" class="row">
-						<h1 class="page-titles"></h1>
+			<!-- Section 1: Title -->
+			<div class="container">
+				<div class="row section1">
+					<!-- Subsection: Title -->
+					<article class="text-center">
+						<h1 class="title"></h1>
 					</article>
 				</div>
 			</div>
-			<!-- Section 2: Contact -->
-			<div id="">
-				<div class="container" id="article-container">	
-				</div>
-			</div>
-            <div id="contact">
+			<!-- Section 2: Content -->
+			<div>
+				<!-- Container that contains all project descriptions and takeaways -->
+				<div id = "article-container" class="container">
+                </div>    
+            </div>
+            <!--  -->
+			<div id="contact">
 				<div class="container">
 					<article>
 						<h2 class="page-titles">🌱 Contact 🌱</h2>
@@ -89,42 +89,5 @@
 		<!-- Right Margin -->
 		<div class="col"></div>
 	</div>
-
 </body>
 </html>
-<script type="text/javascript">
-	const cvHeight = 526;
-	const contactHeight = 1276;
-	$('#cv-click').click(function() {
-		$.scrollTo($('#cv'), {duration: 1000});
-	});
-	$(document).scroll(function() {
-		var scrollDistance = $(document).scrollTop();
-		console.log(scrollDistance);
-		if (scrollDistance < cvHeight) {
-			if ($('.selected').html() != $('#about-click').html()) {
-				$('.selected').removeClass('selected');
-				$('#about-click').addClass('selected');
-			}
-		} else if (scrollDistance >= cvHeight && scrollDistance < contactHeight) {
-			if (!$('#cv-click').hasClass('selected')) {
-				console.log('succes');
-				$('.selected').removeClass('selected');
-				$('#cv-click').addClass('selected');
-			}
-		} if (scrollDistance >= contactHeight) {
-			if (!$('#contact-click').hasClass('selected')) {
-				console.log('succes');
-				$('.selected').removeClass('selected');
-				$('#contact-click').addClass('selected');
-			}
-		}
-		// $.scrollTo($('#cv'), {duration: 1000});
-	});
-	$('#contact-click').click(function() {
-		$.scrollTo($('#contact'), {duration: 1000});
-	});
-	$('#experience-click').click(function() {
-		$.scrollTo($('#experience'), {duration: 1000});
-	});
-</script>
