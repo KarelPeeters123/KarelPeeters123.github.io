@@ -2,22 +2,10 @@
 	--karelorange: #fc7c04;
 	--karelyellow: #ffce00;
 	--karelbrown: #65350F;
+	--kareloffwhite: #fffabf;
 }
 
-td.first-column {
-	font-weight: bold;
-}
-
-td.selected {
-	font-weight: bolder;
-}
-
-#sidebar {
-	padding: 0px;
-	margin: 0px;
-}
 li {
-	/* padding: 5px; */
 	list-style-type: none;
 }
 li a {

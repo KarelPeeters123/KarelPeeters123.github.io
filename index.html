@@ -33,7 +33,7 @@
 	<div class="row">
 		<!-- Left Margin -->
 		<div class="col"> </div>
-		<!-- run function 'showHome' from content.js - ??? -->
+		<!-- Run function 'showHome' from content.js - ??? -->
 		<script>
 			$(document).ready(() => {
 				showHome();
@@ -68,10 +68,10 @@
 						</div>
 						<div class="col" style="padding-top: 5px;">
 							<p>
-								<b>Software Developer with 4 Years Experience in European and NZ Tech Industries</b>
+								<b>Software Developer with 4 Years Experience in the Aotearoa Tech Industry</b>
 							</p>
 							<p>
-								I am a Belgian-born NZ resident. 
+								I am a Belgian-born NZ resident. I have been living in Taamaki Makaurau for 4 years with my partner and 2 cats. 
 							</p>
 						</div>
 					</article>
@@ -82,18 +82,27 @@
 						</div>
 						<div class="col" style="padding-top: 5px;">
 							<p>
+								I am a driven problem-solver and adept communicator, fueled by a passion for programming. I thrive in
+								collaboration, bringing efficiency and dedication to every project. Committed to continuous learning, I eagerly
+								embrace new skills and technologies to enhance team productivity and success. I want to work in a space
+								with a rigorous long-term vision that prioritises communication between all parts of the development lifecycle
+								and is invested in ongoing improvement of the internal development process. For me, software development
+								is about helping people through building quality products and services in quality-focused environments.
+							</p>
+							<p>
 								<b>Core Values</b>
 							</p>
 							<p>
-								<li>Communication</li>
-								<li>Quality</li>
-								<li>Collaboration</li>
+								<li>Communication & Productivity</li>
+								<!-- Critical Feedback -->
+								<li>Quality & Continuous Improvement</li>
+								<li>Collaboration & Good Faith</li>
 							</p>
 						</div>
 					</article>
 					<!-- Subsection: Experience -->
 					<article id ="experience" class="row">
-						<div id="experience" class="main-page-section">
+						<div class="main-page-section">
 							<h2 class="main-page-titles"></i> Experience</h2>
 						</div>
 						<div class="col" id="experience-paragraphs"style="padding-top: 5px;">
@@ -102,20 +111,20 @@
 					</article>
 					<!-- Subsection: Freelance Work -->
 					<article class="row" style="align-items: center;">
-						<div id="experience" class="main-page-section">
+						<div id="freelance" class="main-page-section">
 							<h2 class="main-page-titles"></i> Freelance <br>Work</h2>
 						</div>
-						<div class="col" id="experience-paragraphs"style="padding-top: 5px;">
-							<!-- LOAD EXPERIENCE FROM content.js -->
+						<div class="col" id="freelance-paragraphs"style="padding-top: 5px;">
+							<!-- LOAD FREELANCE FROM content.js -->
 						</div>
 					</article>
 					<!-- Subsection: Internships -->
 					<article class="row" style="align-items: center;">
-						<div id="experience" class="main-page-section">
+						<div id="internships" class="main-page-section">
 							<h2 class="main-page-titles"></i> Internships</h2>
 						</div>
-						<div class="col" id="experience-paragraphs"style="padding-top: 5px;">
-							<!-- LOAD EXPERIENCE FROM content.js -->
+						<div class="col" id="internships-paragraphs"style="padding-top: 5px;">
+							<!-- LOAD INTERNSHIPS FROM content.js -->
 						</div>
 					</article>
 					<!-- Subsection: Personal Projects -->
@@ -124,7 +133,7 @@
 							<h2 class="main-page-titles"></i> Personal <br>Projects</h2>
 						</div>
 						<div class="col" id="experience-paragraphs"style="padding-top: 5px;">
-							<!-- LOAD EXPERIENCE FROM content.js -->
+							<!-- LOAD PROJECTS FROM content.js -->
 						</div>
 					</article>
 					<!-- Subsection: Education -->
@@ -215,41 +224,3 @@
 	</div>
 </body>
 </html>
-
-<!--  -->
-<script type="text/javascript">
-	const cvHeight = 526;
-	const contactHeight = 1276;
-	$('#cv-click').click(function() {
-		$.scrollTo($('#cv'), {duration: 1000});
-	});
-	$(document).scroll(function() {
-		var scrollDistance = $(document).scrollTop();
-		console.log(scrollDistance);
-		if (scrollDistance < cvHeight) {
-			if ($('.selected').html() != $('#about-click').html()) {
-				$('.selected').removeClass('selected');
-				$('#about-click').addClass('selected');
-			}
-		} else if (scrollDistance >= cvHeight && scrollDistance < contactHeight) {
-			if (!$('#cv-click').hasClass('selected')) {
-				console.log('succes');
-				$('.selected').removeClass('selected');
-				$('#cv-click').addClass('selected');
-			}
-		} if (scrollDistance >= contactHeight) {
-			if (!$('#contact-click').hasClass('selected')) {
-				console.log('succes');
-				$('.selected').removeClass('selected');
-				$('#contact-click').addClass('selected');
-			}
-		}
-		// $.scrollTo($('#cv'), {duration: 1000});
-	});
-	$('#contact-click').click(function() {
-		$.scrollTo($('#contact'), {duration: 1000});
-	});
-	$('#experience-click').click(function() {
-		$.scrollTo($('#experience'), {duration: 1000});
-	});
-</script>
