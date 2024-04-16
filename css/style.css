@@ -36,7 +36,7 @@ p {
 }
 
 .KPtitle {
-	font-size: 10vh;
+	font-size: 7vh;
 	font-family: "Nabla", system-ui;
 	font-optical-sizing: auto;
 	font-weight: 400;
@@ -59,6 +59,13 @@ p {
 	padding-top: 2vh;
   }
 
+.contact-item {
+	font-size:36px;
+	color:black;
+}
+
+/* Alignment and Padding */
+
 .page-subsection {
 	padding: 2%;
 	padding-top: 0%;
@@ -73,10 +80,11 @@ p {
 .ssectionKPtitle {
 	text-align: center; 
 	min-width: 50vw;
+	padding-top: 0%;
 	padding-bottom: 3%;
 }
 
-.contact-item {
-	font-size:36px;
-	color:black;
+article {
+	padding-top: 2vh;
+	padding-bottom: 2vh;
 }
