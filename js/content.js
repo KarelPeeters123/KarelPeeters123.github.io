@@ -254,7 +254,7 @@ const showHome = () => {
         $para.append(`<i>PROJECTS</i>`);
         var $list = $('<ul></ul>');
         experience.projects.forEach((project) => {
-            $list.append(`<li><a href="experience.html?experience=${experience.key}&project=${project.key}">${project.name}</a></li>`);
+            $list.append(`<li><a href="experience.html?type=experience&experience=${experience.key}&project=${project.key}">${project.name}</a></li>`);
         })
         $para.append($list);
         
