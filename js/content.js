@@ -185,7 +185,7 @@ var content = {
                     name: "Natural Language Processing",
                     key: "spacy",
                     details: "A local law firm wanted to create an AI that could be fed legal documents such as contracts, land deeds and company registrations and return the user with primarily any entities (people, companies, organsiations, addresses, dates, etc.) involved in the legal document and secondly, discover the relationships between the entities in the document. For example, a labour contract should identify all the people involved, who is the employee and who is the employer, address of the business, etc.",
-                    responsibility: "In this project I was responsible b   ",
+                    responsibility: "In this project I was responsible for writing python scripts to convert csv data into python friendly objects as well as write an NER model trained in that data to learn to recognise entities in text. As a final step, in order to remain compatible with all types of documents, including scans of documents we used Google's OCR library to convert images to text before feeding that text to the AI",
                     technologies: [
                         "HTML",
                         "CSS",
