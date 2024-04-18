@@ -96,7 +96,7 @@ var content = {
                     ]
                 }
             ],
-            takeaways: "test"
+            takeaways: ""
         },
         {
             key: "soludtiondynamics",
